@@ -31,3 +31,6 @@ def post_intent():
         r = requests.post(url, data = json.dumps(payload), headers = headers )
         print("r: ",r)
         return (r.text)
+
+if __name__ == '__main__':
+    app.run(host='127.0.0.1', debug=True)
